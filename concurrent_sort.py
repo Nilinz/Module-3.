@@ -28,7 +28,7 @@ def organize_files(src_folder):
                 move_file(file, category)
                 return
 
-        # Невідоме розширення
+        # Для невідомих розширень
         move_file(file, 'other')
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
